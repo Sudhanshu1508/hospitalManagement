@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hospital Management</title>
+</head>
+<body>
+    <header>
+        <img src="your_logo_url" alt="Hospital Logo">
+        <h1>Hospital Management System</h1>
+    </header>
+
+    <div class="container">
+        <div class="menu-frame">
+            <nav>
+                <p>Menu</p>
+                <ul>
+                    <li><a href="#" onclick="showContent('reports')">Check your Reports</a></li>
+                    <li><a href="#" onclick="showContent('medicalStores')">Find Medical stores near you</a></li>
+                    <li><a href="#" onclick="showContent('medicalServices')">Find Medical services near you</a></li>
+                    <li><a href="#" onclick="showContent('doctors')">Consult a Doctor</a></li>
+                    <li><a href="https://www.netmeds.com/healthstore?source_attribution=ADW-CPC-Search-PY-Generic&utm_source=ADW-CPC-Search-PY-Generic&utm_medium=CPC&utm_campaign=ADW-CPC-Search-PY-Generic&gad_source=1&gclid=Cj0KCQiA2eKtBhDcARIsAEGTG43F-ZUCT-_ELW3lT-4cIjwpa25wwYh5v1omU1lgXzO1M2Nrcs2VIycaAiaUEALw_wcB" target="_blank">Order medicines</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content-frame" id="contentFrame">
+            <section>
+                <input type="text" id="medicalStoresInput" style="display:none;" placeholder="Enter medical store name...">
+                <input type="text" id="medicalServicesInput" style="display:none;" placeholder="Enter hospital name...">
+                <input type="text" id="doctorsInput" style="display:none;" placeholder="Enter doctor specialization...">
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Hospital Name. All Rights Reserved.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
